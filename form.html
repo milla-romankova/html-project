@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Children Illustrators</title>
+</head>
+  <body>
+    <header>
+	  <h1>Reader Account </h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+    </header>
+    <main>
+      <form action="https://formspree.io/moqklddz" method="POST">
+      <label> Reader name:
+	    <input type="text" name="reader-name" placeholder="your name" required autofocus>
+   	  </label>
+	  <br>
+	  <label> Reader email:
+        <input type="email" name="reader-email" placeholder="your email" required>
+      </label>
+	  <br>
+	  <label>Password: 
+	    <input type="password" name="pwd">
+	  </label>
+	  <br>
+	  <label>Reader Birthday:
+	    <input type="date" name="birthday">
+	  </label>
+	  <br>
+	  <label>Gender</label>
+	  <label>
+	    <input type="radio" name="gender" value="female">Female
+      </label>
+      <label>
+        <input type="radio" name="gender" value="male">Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="other">Other
+	  </label>
+	  <br>
+	  <br>
+	  <label>Family status</label>
+	  <br>
+	  <label> I have a husband
+	    <input type="checkbox" name="husband" value="husband">
+	  </label>
+	  <label> I have a wife
+		<input type="checkbox" name="wife" value="wife">
+	  </label>
+      <label> I have a child
+		<input type="checkbox" name="child" value="child">
+	  </label>
+      <label> I have a pet
+	    <input type="checkbox" name="pet" value="pet">
+	  </label>
+	  <br>
+	  <label> Choose your favourite time for reading:</label>
+	  <select name="time for reading" size="2" multiple>
+	    <option value="morning">Morning</option>
+		<option value="afternoon">Afternoon</option>
+		<option value="evening">Evening</option>
+		<option value="night">Night</option>
+		<option value="all the day long" selected>All the day long</option>
+	  </select>
+	  <br>
+	  <label>Measure your reading love(between 0 and 100):
+	    <input type="range" name="readinglove" min="0" max="100">
+	  </label>
+	  <br>
+	  <label>Select your favourite book cover color:
+	    <input type="color" name="favcolor" value="#ff0000">
+	  </label>
+	  <br>
+	  <label>Quantity of books you read per year:
+	    <input type="number" name="quantity" min="0" max="1000" step="1" value="12">
+	  </label>
+	  <br>
+	  <input type="button" onclick="alert('Check for being awake!')" value="Click Me!">
+	  <br>
+	  <fieldset>
+ 	    <legend>Reader Faves:</legend>
+		<label for="favbook">Favourite book:</label>
+		<br>
+		<input type="text" id="favbook" name="favbook" required>
+		<br>
+		<label for="favauthor">Favourite author:</label>
+		<br>
+		<input type="text" id="favauthor" name="favauthor" required>
+		<br>
+		<label for="favgenre">Favourite genre:</label>
+		<br>
+		<input list="genres" name="favgenre" id="favgenre">
+		<datalist id="genres">
+		  <option value="Fantasy">
+		  <option value="Adventure">
+		  <option value="Romance">
+		  <option value="Horror">
+		  <option value="Contemporary">
+		</datalist>
+		<br>
+	    </fieldset>
+	    <label>Write your favourite quote from the book</label>
+	    <textarea name="quote" rows="5" cols="30"></textarea>
+	    <br>
+	    <input type="submit">
+	    <input type="reset">
+	  </form>
+    </main>
+  </body>
+</html>
